@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "npm run lint && npm run cover",
+    "test": "npm run lint && npm run cover && codeclimate-test-reporter < coverage/lcov.info",
     "lint": "eslint bin/src/*.js",
     "unit": "cd bin/test && node *.js",
     "cover": "istanbul cover ./bin/test/train_spec.js"
@@ -8,6 +8,7 @@
   "devDependencies": {
     "eslint": "^3.5.0",
     "istanbul": "^0.4.5",
-    "cheerio-httpcli": "^0.6.9"
+    "cheerio-httpcli": "^0.6.9",
+    "codeclimate-test-reporter": "^0.3.3"
   }
 }
