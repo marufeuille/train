@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test": "npm run lint && npm run unit",
+    "lint": "eslint bin/src/*.js",
+    "unit": "cd bin/test && node *.js"
+  },
+  "devDependencies": {
+    "cheerio-httpcli": "^0.6.9"
+  }
+}
