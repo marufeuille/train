@@ -5,6 +5,7 @@
     "unit": "cd bin/test && node *.js"
   },
   "devDependencies": {
-    "cheerio-httpcli": "^0.6.9"
+    "cheerio-httpcli": "^0.6.9",
+    "eslint": "^3.5.0"
   }
 }
