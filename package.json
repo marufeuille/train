@@ -1,11 +1,13 @@
 {
   "scripts": {
-    "test": "npm run lint && npm run unit",
+    "test": "npm run lint && npm run cover",
     "lint": "eslint bin/src/*.js",
-    "unit": "cd bin/test && node *.js"
+    "unit": "cd bin/test && node *.js",
+    "cover": "istanbul cover ./bin/test/train_spec.js"
   },
   "devDependencies": {
-    "cheerio-httpcli": "^0.6.9",
-    "eslint": "^3.5.0"
+    "eslint": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "cheerio-httpcli": "^0.6.9"
   }
 }
