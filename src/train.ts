@@ -3,12 +3,12 @@
 /* Description:                                          */
 /*   this scripts processing yahoo.co.jp                 */
 /*********************************************************/
-/// <reference path='../ext/node.d.ts'/>
-/// <reference path='../typings/index.d.ts'/>
-/// <reference path='../ext/cheerio-httpcli.d.ts' />
+/// <reference path="../ext/node.d.ts"/>
+/// <reference path="../typings/index.d.ts"/>
+/// <reference path="../ext/cheerio-httpcli.d.ts"" />
 let client = require("cheerio-httpcli");
 import mongoose = require("mongoose");
-let logger = require('./logger').request;
+let logger = require("./logger").request;
 
 export namespace Line {
     export enum State {

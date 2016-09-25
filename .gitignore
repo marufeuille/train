@@ -4,3 +4,4 @@ coverage/
 typings/
 logs/
 *.sqlite3
+*.swp

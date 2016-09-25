@@ -4,11 +4,11 @@
 /* Description:                                          */
 /*   this scripts processing yahoo.co.jp                 */
 /*********************************************************/
-/// <reference path='../ext/node.d.ts'/>
-/// <reference path='../typings/index.d.ts'/>
-/// <reference path='../ext/cheerio-httpcli.d.ts' />
+/// <reference path="../ext/node.d.ts"/>
+/// <reference path="../typings/index.d.ts"/>
+/// <reference path="../ext/cheerio-httpcli.d.ts"" />
 var client = require("cheerio-httpcli");
-var logger = require('./logger').request;
+var logger = require("./logger").request;
 var Line;
 (function (Line) {
     (function (State) {
