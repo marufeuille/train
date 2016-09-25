@@ -1,6 +1,8 @@
+"use strict";
+/// <reference path='../ext/node.d.ts'/>
 var assert = require("assert");
-var train = require("../src/train.js");
+var train_js_1 = require("../src/train.js");
 // Test for Empty Argument
-assert.equal(train.getTrainData(""), "");
+assert.equal(train_js_1["default"].getAllURLs(""), []);
 // Test for valid URL
-assert.notEqual(train.getTrainData("http://transit.yahoo.co.jp/traininfo/detail/22/0/"), "");
+assert.notEqual(train_js_1["default"].getAllURLs("http://transit.yahoo.co.jp/traininfo/area/4/"), []);

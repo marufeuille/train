@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "cheerio": "registry:npm/cheerio#0.20.0+20160422172414",
+    "mongoose": "registry:npm/mongoose#4.3.5+20160628072220"
+  },
+  "globalDependencies": {
+    "sqlite3": "registry:dt/sqlite3#2.2.3+20160724070935"
+  }
+}

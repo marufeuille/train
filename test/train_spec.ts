@@ -1,8 +1,8 @@
+/// <reference path='../ext/node.d.ts'/>
 let assert = require("assert");
-let train = require("../src/train.js");
+import Line from "../src/train.js";
 
 // Test for Empty Argument
-assert.equal(train.getTrainData(""),"");
-
+assert.equal(Line.getAllURLs(""),[]);
 // Test for valid URL
-assert.notEqual(train.getTrainData("http://transit.yahoo.co.jp/traininfo/detail/22/0/"),"");
+assert.notEqual(Line.getAllURLs("http://transit.yahoo.co.jp/traininfo/area/4/"),[]);
